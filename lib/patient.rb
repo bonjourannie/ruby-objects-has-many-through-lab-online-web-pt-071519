@@ -13,7 +13,11 @@ class Patient
   end
   
   def new_appointment(doctor, date)
-    Appointment.new
+    Appointment.new(doctor, date, self)
   end
+  
+  def appointments 
+    
+  end 
   
 end 
